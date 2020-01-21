@@ -2,7 +2,7 @@
 
 clear all
 clc 
-close all %find video input objects in memory
+close all 
 objects = imaqfind %find video input objects in memory
 delete(objects) %delete a video input object from memory
 %% Arduino encoder for 6 servo motors 
@@ -16,7 +16,7 @@ s6 = servo(a,'D7');
 
 for i=0:1:4
     %the six sevo motors variable.
-P1=30; %Gripper 30 is open,  100 close
+P1=30; %Gripper 30 is open,  100 catch
 P2=85;%fixed
 P3=100;
 P4=50; %increse (y=>inc z=>dec)
